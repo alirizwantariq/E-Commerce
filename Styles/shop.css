@@ -1,0 +1,15 @@
+body::before{
+    display: block;
+    content: "";
+    height: 50px;
+}
+body {
+    background-color: #F2EEEE;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+@media(min-width:768px) {
+    .searchbox {
+        width: 50%;
+    }
+}

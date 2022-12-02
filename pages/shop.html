@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles/shop.css">
+    <link rel="shortcut icon" href="../Images/shopping-bag.svg.svg" type="image/x-icon">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="../scripts/shop.js" defer></script>
+    <script src="../scripts/category.js" defer></script>
+    <script src="../scripts/search.js" defer></script>
+    <title>Shop 🛒</title>
+</head>
+<!-- navbar -->
+<nav class="navbar bg-dark fixed-top navbar-expand-md navbar-dark pb-2">
+    <div class="container">
+        <a class="navbar-brand" href="#">Shop <span class="text-warning">E Commerce</span> 🛒</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="../pages/admin.html">Admin</a></li>
+                <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                <li class="nav-item"><a class="nav-link text-danger" href="./logIn.html" onclick="signout()">Sign out</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Search/ -->
+<section class="bg-primary text-light p-4">
+    <div class="container">
+        <div class="d-md-flex justfy-content-between align-items-center">
+            <h3 class="mb-3 mb-md-0 pe-5 text-center fw-bold">Get All Products At One Place</h3>
+            <div class="input-group searchbox shadow-lg">
+                <input type="text" class="form-control" name="search" id="searchBox" />
+                <button class="btn text-white btn-outline-primary btn-lg" type="button" onclick="search()">Search</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- categories -->
+<section class="bg-primary p-4">
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-around" id="category">
+
+        </div>
+
+    </div>
+</section>
+<section class="p-4">
+    <div class="container">
+        <h3><span><u>All Products</u></span><small class="text-muted"> At a discount</small>
+        </h3>
+    </div>
+</section>
+<!-- Products/cards -->
+<section class="p-4">
+    <div class="container">
+        <div class="row text-center overflow-auto g-4" id="products-list">
+        </div>
+
+    </div>
+</section>
+<footer>
+    <div class="container">
+
+    </div>
+
+</footer>
+
+<body>
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
