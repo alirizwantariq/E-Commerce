@@ -22,7 +22,7 @@ function check() {
         localStorage.setItem("image", login.image);
         localStorage.setItem("token", login.token);
         localStorage.setItem("email", login.email);
-        window.location.href = "../shop.html";
+        window.location.href = "../index.html";
       }
     });
 }
